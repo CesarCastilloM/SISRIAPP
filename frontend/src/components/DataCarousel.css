@@ -1,0 +1,117 @@
+.data-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.carousel-button {
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.carousel-content {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 0 50px;
+    width: 100%;
+    max-width: 400px;
+    border-top: 4px solid;
+    transition: all 0.3s ease;
+}
+
+.carousel-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.value-container {
+    margin: 20px 0;
+}
+
+.value {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.unit {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.description {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.error-message {
+    margin: 10px 0 0;
+    padding: 8px;
+    background-color: #fff3e0;
+    color: #e65100;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.dot.active {
+    transform: scale(1.2);
+}

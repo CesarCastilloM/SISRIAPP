@@ -1,0 +1,186 @@
+.field-management-container {
+    padding: 20px;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f5f5;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+}
+
+.map-container {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+    flex: 2;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.error-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+.data-container {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.data-carousel {
+    height: 100%;
+}
+
+.data-carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+    .field-management-container {
+        height: auto;
+    }
+    
+    .map-container {
+        height: 50vh;
+    }
+    
+    .data-container {
+        height: auto;
+        max-height: 50vh;
+    }
+}
+
+/* Map styles */
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content {
+    margin: 8px;
+}
+
+/* Card styles */
+.MuiCard-root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiCardContent-root {
+    flex: 1;
+    padding: 16px;
+}
+
+/* Chart container */
+.recharts-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.recharts-surface {
+    width: 100%;
+    height: 100%;
+}
+
+/* Leaflet Map Styles */
+.leaflet-popup-content-wrapper {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Zone Popup Styles */
+.zone-popup {
+    padding: 15px;
+    max-width: 300px;
+}
+
+.zone-popup h3 {
+    margin: 0 0 10px 0;
+    color: #2196f3;
+}
+
+.zone-popup .data-section {
+    margin: 10px 0;
+}
+
+.zone-popup .data-section h4 {
+    margin: 5px 0;
+    color: #666;
+}
+
+.zone-popup .data-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+.zone-popup .data-label {
+    color: #666;
+}
+
+.zone-popup .data-value {
+    font-weight: 500;
+}
+
+/* Override Leaflet controls */
+.leaflet-control-layers {
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+.leaflet-control-layers-base label {
+    margin: 0 !important;
+    padding: 8px 12px !important;
+}
+
+.leaflet-control-layers-base input[type="radio"] {
+    margin-right: 8px !important;
+}

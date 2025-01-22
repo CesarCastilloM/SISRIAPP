@@ -1,0 +1,152 @@
+.field-management {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.field-management h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.field-map {
+    position: relative;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.field-map-container {
+    position: relative;
+}
+
+.map-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.control-button {
+    background-color: white;
+    border: 2px solid #2196f3;
+    color: #2196f3;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.control-button:hover {
+    background-color: #2196f3;
+    color: white;
+}
+
+.control-button.active {
+    background-color: #2196f3;
+    color: white;
+}
+
+.edit-mode-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.edit-mode-button:hover {
+    background-color: #f0f0f0;
+}
+
+.edit-mode-button.active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #1976d2;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.zone-data {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.zone-data h2 {
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.data-section {
+    margin-bottom: 20px;
+}
+
+.data-section h3 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.data-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.data-item label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.data-item span {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+}
+
+.zone-popup {
+    text-align: center;
+}
+
+.zone-popup h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.zone-popup p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
